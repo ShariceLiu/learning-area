@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Mozilla 宣传主页</title>
+    <img src="originals/firefox_logo-only_RGB-120px.png">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
@@ -17,6 +18,12 @@
     <main>
       <article>
         <!-- 插入来自 Bilibili 的 <iframe> 元素 -->
+        <iframe 
+          src="//player.bilibili.com/player.html?aid=3303261&bvid=BV1rs411d7hC&cid=5221343&page=2" 
+          scrolling="no" border="0" frameborder="no" 
+          framespacing="0" allowfullscreen="true"
+          width="400px"> 
+        </iframe>
 
         <h2>自由网络 尽情驰骋</h2>
 
@@ -28,22 +35,38 @@
       <div class="further-info">
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
-          <img>
+          <img srcset="originals/firefox_logo-only_RGB-120px.png 120w,
+          originals/firefox_logo-only_RGB-400px.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/firefox_logo-only_RGB-400px.png" alt="firefox logo only">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="originals/mozilla-dinosaur-head-120px.png 120w,
+          originals/mozilla-dinosaur-head-400px.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/mozilla-dinosaur-head-400px.png" alt="mozilla dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="originals/firefox-addons-120px.jpg 120w,
+          originals/firefox-addons.jpg 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/firefox-addons.jpg" alt="firefox addons">
         </a>
         <a href="https://developer.mozilla.org/zh-CN/">
-          <img>
+          <img srcset="originals/firefox_logo-only_RGB-120px.png 120w,
+          originals/firefox_logo-only_RGB-400px.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/firefox_logo-only_RGB-400px.png" alt="firefox logo only">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- 插入照片元素 -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="originals/red-panda-small.jpg">
+          <img src="originals/red-panda.jpg" alt="red panda lying on the tree">
+        </picture>
       </div>
 
     </main>
